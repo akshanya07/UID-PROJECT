@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="full">
+        <div id="top-container">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you — whether it's a bug, a feature idea, or just a hello.</p>
+            <button id="phase1">
+                View Phase 1 of SplitMate
+            </button>
+        </div>
+        <div id="bottom">
+            <div id="left">
+                <div id="phone">
+                    <p style="color: #58a6ff;"><small>PHONE</small></p>
+                    <p style="color: white;">
+                        <bold>+91 98765 43210</bold>
+                    </p>
+                    <p style="color: grey;"><small>Mon-Fri,10AM-6PM IST</small></p>
+                </div>
+                <div id="location">
+                    <p style="color: #58a6ff;"><small>LOCATION</small></p>
+                    <p style="color: white;">
+                        <bold>Bengaluru, Karnataka</bold>
+                    </p>
+                    <p style="color: grey;"><small>India-560001</small></p>
+                </div>
+                <div id="email">
+                    <p style="color: #58a6ff;"><small>EMAIL</small></p>
+                    <p style="color: white;">
+                        <bold>hello@splitmate.in</bold>
+                    </p>
+                    <p style="color: grey;"><small>We reply within 24 hours</small></p>
+                </div>
+                <div id="followus">
+                    <p style="color: #58a6ff;"><small>FOLLOW US</small></p>
+                    <ul
+                        style="display: flex; flex-direction: row;gap: 10px;text-decoration: none;list-style-type: none;color: white;">
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right">
+                <h2 style="line-height: 5px;color: white;">Send Us a Message</h2>
+                <p style="color: grey;"><small>Facing a problem or have a suggestion? Fill this out and we'll get back
+                        to you.</small></p>
+                <form>
+                    <div id="ne">
+                        <div id="name">
+                            <label id="fname" style="color: #58a6ff;">FULL NAME*</label>
+                            <input type="text" required placeholder="e.g.Rahul Mehta">
+                        </div>
+                        <div id="r-email">
+                            <label id="femail" style="color: #58a6ff;">EMAIL*</label><br>
+                            <input type="email" style="width: 100%;" required placeholder="you@email.com">
+                        </div>
+                    </div>
+                    <br>
+                    <label id="sub" style="color: #58a6ff;">SUBJECT*</label><br>
+                    <select name="sub" aria-placeholder="Choose a topic..." style="width: 100%;color: white;" required>
+                        <option name="sub">Choose a topic...</option>
+                        <option name="sub">Bug Report</option>
+                        <option name="sub">Feature Request</option>
+                        <option name="sub">General Question</option>
+                        <option name="sub">Billing/Account</option>
+                        <option name="sub">Partnership/Collaboration</option>
+                        <option name="sub">Other</option>
+                    </select><br><br>
+                    <label id="message" style="color: #58a6ff;">MESSAGE*</label><br>
+                    <textarea required style="width: 100%;height: 50px;"
+                        placeholder="Describe your issue or idea in detail..."></textarea><br><br>
+                    <button id="submitmessage" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div><a href="index.html" style="text-decoration: none;color:white;margin-left: 20px;">Logout</a></div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

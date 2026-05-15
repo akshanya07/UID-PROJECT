@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Group Details</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0b1220;
+            color: white;
+            padding: 5px;
+            line-height: 1.6;
+            margin-top: 0px;
+        }
+
+        .box {
+            margin: 10px 0 0 10px;
+            background: #111827;
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+        }
+
+        h1 {
+            color: rgb(39, 104, 104);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="bg-[#161b22] border-b border-[#30363d] px-6 py-4 flex flex-col md:flex-row md:items-center 
+        md:justify-between gap-4">
+
+        <div class="flex items-center gap-3">
+
+            <div class="w-10 h-10 rounded-xl bg-emerald-400 text-black font-extrabold flex 
+                items-center justify-center "> S </div>
+
+            <h1 class="text-2xl font-bold text-blue-300">
+                SplitMate
+            </h1>
+
+        </div>
+
+
+        <ul class="flex flex-wrap gap-5 text-gray-300 font-medium">
+            <li><a href="home.html" class="hover:text-emerald-400">Home</a></li>
+            <li><a href="chores.html" class="hover:text-emerald-400">Chores</a></li>
+            <li><a href="expenses.html" class="hover:text-emerald-400">Expenses</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400"> About</a></li>
+            <li><a href="faq.html" class="hover:text-emerald-400"> FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400"> Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <div class="box" id="details"></div>
+
+    <div>
+        <button class="mt-4 px-4 py-2 bg-cyan-500 text-black rounded hover:bg-cyan-600 " onclick="addexpense()">
+            Add Expense
+        </button>
+        <button class="mt-4 ml-2 px-4 py-2 bg-cyan-500 text-black rounded hover:bg-cyan-600" onclick="addchore()">
+            Add Chore
+        </button>
+
+        <div class="mt-4 text-sm text-gray-400" id="chores">
+            Chores:
+        </div>
+        <div class="mt-2 text-sm text-gray-400" id="expense">
+            Expense:
+        </div>
+    </div>
+
+    <script>
+
+        let params =
+            new URLSearchParams(window.location.search);
+        let id = params.get("id");
+
+        let groups =
+            JSON.parse(localStorage.getItem("groups"))
+            || [];
+
+        let group =
+            groups.find(g => g.id == id);
+
+
+        document.getElementById("details")
+            .innerHTML = `
+        <h1>${group.name}</h1>
+
+        <p>
+          Members:
+          ${group.members}
+        </p>
+
+        <p>
+           Expense:
+          ₹${group.expense}
+        </p>
+
+        <p>
+          Chores:
+          ${group.chores}
+        </p>
+      `;
+
+        function addexpense() {
+            let amount =
+                prompt("Enter expense amount:");
+            if (amount) {
+                group.expense =
+                    Number(group.expense) + Number(amount);
+                updateGroup();
+                document.getElementById("expense").innerText =
+                    `Expense: ₹${group.expense}`;
+            }
+
+        }
+
+        function addchore() {
+            let chore = prompt("Enter chore description:");
+            if (chore) {
+                group.chores = Number(group.chores) + 1;
+                updateGroup();
+                document.getElementById("chores").innerText =
+                    `Chores: ${group.chores}`;
+            }
+        }
+
+        function updateGroup() {
+            let groups = JSON.parse(localStorage.getItem("groups")) || [];
+            let index = groups.findIndex(g => g.id == id);
+            if (index !== -1) {
+                groups[index] = group;
+                localStorage.setItem("groups", JSON.stringify(groups));
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitMate Chores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white">
+    <nav class="bg-[#161b22] border-b border-[#30363d] px-6 py-4 flex flex-col md:flex-row md:items-center 
+        md:justify-between gap-4">
+
+        <div class="flex items-center gap-3">
+
+            <div class="w-10 h-10 rounded-xl bg-emerald-400 text-black font-extrabold flex 
+                items-center justify-center "> S </div>
+
+            <h1 class="text-2xl font-bold text-blue-300">
+                SplitMate
+            </h1>
+
+        </div>
+
+
+        <ul class="flex flex-wrap gap-5 text-gray-300 font-medium">
+            <li><a href="home.html" class="hover:text-emerald-400">Home</a></li>
+            <li><a href="chores.html" class="hover:text-emerald-400">Chores</a></li>
+            <li><a href="expenses.html" class="hover:text-emerald-400">Expenses</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400"> About</a></li>
+            <li><a href="faq.html" class="hover:text-emerald-400"> FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400"> Contact</a></li>
+        </ul>
+
+    </nav>
+    <div class="flex justify-between items-center" id="page-chores">
+        <h1 class="page-title" style="font-size:xx-large; font-weight:750;">All Chores</h1>
+        <div class="text-slate-400 text-lg">Every task assigned across all your groups</div>
+        <button id="addBtn" onclick="openForm()" class="bg-[#16a37c] text-black px-6 py-3 rounded-xl font-bold">+
+            Add</button>
+    </div>
+    <!-- Chore List -->
+    <div id="choreList"></div>
+    <!-- Form fro adding a Chore -->
+    <div id="formBox" style="display:none;" class="bg-slate-900 border border-slate-700 p-6 rounded-2xl w-96 mb-8">
+        <h1 style="font-size:xx-large; font-weight:600;">Add Chore</h1>
+        <label for="groupName">GROUP</label>
+        <select id="groupName" class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 mt-2 text-white">
+            <option value="group1">Group 1</option>
+            <option value="group2">Group 2</option>
+            <option value="group3">Group 3</option>
+        </select>
+        <br><br>
+
+        <div class="mb-5">
+            <label for="choreName" class="block mb-2 text-xl">CHORE NAME</label>
+            <input type="text" id="choreName" placeholder="Enter chore"
+                class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-400">
+        </div>
+        <label for="personName">ASSIGNED TO</label>
+        <select class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 mt-2 text-white" id="personName">
+            <option value="roomate1">Roomate 1</option>
+            <option value="roomate2">Roomate 2</option>
+            <option value="roomate3">Roomate 3</option>
+            <option value="all">All</option>
+        </select>
+        <br><br>
+        <div class="flex gap-4">
+            <button onclick="cancelForm()" class="bg-slate-700 px-5 py-2 rounded-xl">Cancel</button>
+            <button onclick="saveChore()" class="bg-[#16a37c] text-black px-5 py-2 rounded-xl font-bold">Save</button>
+        </div>
+    </div>
+    <div id="popup"
+        class="hidden fixed bottom-5 right-5 bg-[#16a37c] text-black px-6 py-4 rounded-xl font-bold text-lg">Added
+        Successfully</div>
+    <script src="chores.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="faq.css">
+</head>
+
+<body>
+    <nav class="bg-[#161b22] border-b border-[#30363d] px-6 py-4 flex flex-col md:flex-row md:items-center
+    md:justify-between gap-4">
+
+        <div class="flex items-center gap-3">
+
+            <div class="w-10 h-10 rounded-xl bg-emerald-400 text-black font-extrabold flex 
+                items-center justify-center "> S </div>
+
+            <h1 class="text-2xl font-bold text-blue-300">
+                SplitMate
+            </h1>
+
+        </div>
+
+
+        <ul class="flex flex-wrap gap-5 text-gray-300 font-medium">
+            <li><a href="home.html" class="hover:text-emerald-400">Home</a></li>
+            <li><a href="chores.html" class="hover:text-emerald-400">Chores</a></li>
+            <li><a href="expenses.html" class="hover:text-emerald-400">Expenses</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400"> About</a></li>
+            <li><a href="faq.html" class="hover:text-emerald-400"> FAQ</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400"> Contact</a></li>
+        </ul>
+
+    </nav>
+    <div id="top-box">
+        <h1 style="color: white;"><b>Frequently Asked Questions</b></h1>
+        <p style="color: rgb(178, 176, 176);">Everything you need to know about SplitMate — quick answers, no fluff.</p>
+    </div>
+
+
+    <h3>GETTING STARTED</h3>
+    <div class="faq">
+        <div class="question">
+            <span>How do I log in?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Use username <b>admin</b> and password <b>1234</b>.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <span>How do I create a new group?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Click the + New Group button in the left sidebar. Enter a name for your group (e.g. "Road Trip",
+            "Flatmates") and it will appear instantly on your Home dashboard.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <span>Can I add multiple groups?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Yes — SplitMate supports unlimited groups. Each group gets its own expense log, chore list, and visual donut
+            chart, all accessible from the sidebar.
+        </div>
+    </div>
+
+    <h3>EXPENSES</h3>
+    <div class="faq">
+        <div class="question">
+            <span>How do I add an expense?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Go to the Expenses page or open a group and click + Add Expense. Fill in the group, category, description,
+            payer, and amount — then hit Save. It shows up instantly.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <span>What categories are supported?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Currently: Grocery, Bills, Transport, Food & Drinks, Entertainment, Rent, and Other. Each category has a
+            unique colour and icon so your spending is easy to scan.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <span>Can I filter expenses by group?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Yes. On the Expenses page you'll find filter pills at the top — one for All and one for each of your groups.
+            Click any pill to show only that group's transactions.
+        </div>
+    </div>
+    <h3>CHORES</h3>
+    <div class="faq">
+        <div class="question">
+            <span>How do I assign a chore to someone?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Open the Chores page or a group detail and click + Add. Choose the group, enter a chore name, then select
+            who it's assigned to from the dropdown — which is auto-populated from group members.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">
+            <span>How do I mark a chore complete?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Click the checkbox on the left of any chore row. It turns teal and the chore name gets a strikethrough to
+            indicate it's done. Click again to revert it to pending.
+        </div>
+    </div>
+
+    <h3>CHARTS & DATA</h3>
+    <div class="faq">
+        <div class="question">
+            <span>What does the donut chart show?</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+            Each slice represents a spending category for that group, sized proportionally to its total. The centre
+            shows the group's net total. It updates live as you add or remove expenses
+        </div>
+    </div>
+
+    <div id="bottom-box">
+        <h2>Still have a question??</h2>
+        <button id="faq-button"><a href="contactproject.html" style="text-decoration: none;">Contact Us</a></button>
+    </div>
+    <script src="faq.js"></script>
+</body>
+
+</html>

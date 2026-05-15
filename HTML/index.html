@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SplitMate – Login</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+
+  <div id="login-page">
+    <div class="login-box">
+      <div class="logo-mark">
+        <div class="logo-text">Split<span>Mate</span></div>
+      </div>
+      <div class="lbl">USERNAME</div>
+      <input class="l-inp" id="l-user" type="text" placeholder="Enter your username">
+      <div class="lbl">Password</div>
+      <input class="l-inp" id="l-pass" type="password" placeholder="Enter your password">
+      <div class="l-err" id="l-err">Invalid credentials. Try admin / 1234</div>
+      <button class="l-btn" onclick="doLogin()">SIGN IN</button>
+      <div class="l-sub">Demo: <b>admin</b> / <b>1234</b></div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
