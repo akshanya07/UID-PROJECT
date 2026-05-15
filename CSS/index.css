@@ -1,0 +1,148 @@
+:root{
+  --bg:#0d1117;
+  --surface:#161b22;
+  --card:#1c2333;
+  --border:#30363d;
+  --teal:#22d3a5;
+  --teal2:#16a37c;
+  --red:#f87171;
+  --yellow:#fbbf24;
+  --blue:#60a5fa;
+  --purple:#a78bfa;
+  --text:#e6edf3;
+  --muted:#8b949e;
+}
+*,*::before,*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0}
+
+body{
+    font-family:'Syne',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    min-height:100vh;
+    overflow-x:hidden
+}
+
+.mono{
+    font-family:'Space Mono',monospace
+}
+
+.hidden{
+    display:none!important
+}
+
+
+#login-page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: #0b1f2a;
+  position:relative;
+  overflow:hidden;
+}
+
+.login-box{
+  position:relative;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:50px 54px;
+  width:430px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: slideUp 0.6s ease;
+
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-text{
+    font-size:27px;
+    font-weight:800;
+    letter-spacing:-0.5px;
+    text-align:center;
+    margin-bottom:38px;
+}
+
+.logo-text span{
+    color:var(--teal);
+}
+
+.lbl{font-size:12px;
+    color:var(--muted);
+    margin-bottom:7px;
+    letter-spacing:.6px;
+
+}
+
+.l-inp {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  padding: 13px 16px;
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  margin-bottom: 18px;
+  transition: border-color .2s, box-shadow .2s;
+  outline: none;
+}
+
+.l-inp:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(34,211,165,.12);
+}
+  
+.l-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--teal), var(--teal2));
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: opacity .2s, transform .15s;
+  margin-top: 6px;
+}
+
+.l-btn:hover {
+  opacity: .88;
+  transform: translateY(-1px);
+}
+
+.l-err {
+  color: var(--red);
+  font-size: 13px;
+  margin-bottom: 12px;
+  display: none;
+}
+
+.l-sub{
+    text-align:center;
+    font-size:13px;
+    color:var(--muted);
+    margin-top:14px
+}
+
+@media(max-width:768px){
+  .login-box{width:calc(100vw - 32px);max-width:390px;padding:36px 28px}
+}
+
+@media(max-width:480px){
+  .login-box{padding:28px 20px;border-radius:16px}
+  .logo-text{font-size:22px}
+}
