@@ -55,7 +55,7 @@ This system helps users:
 | Yaksh | Login Page, About Page |
 
 ---
-#Website
+# Website
 
 Login page:
 <img width="1365" height="641" alt="image" src="https://github.com/user-attachments/assets/04fe5614-b775-4604-ba30-9ce4a793e6d1" />
@@ -67,7 +67,7 @@ Groups page:
 <img width="1362" height="637" alt="image" src="https://github.com/user-attachments/assets/f129e8a2-2337-4c9a-8e09-fe58250f1f93" />
 
 Chores page:
-<img width="1359" height="648" alt="image" src="https://github.com/user-attachments/assets/56369986-3931-4e3e-8123-d8f30629ec7c" />
+<img width="1365" height="641" alt="image" src="https://github.com/user-attachments/assets/02aa1057-5b8e-4357-b11f-e2244c49bc62" />
 
 Expense page:
 <img width="1360" height="635" alt="image" src="https://github.com/user-attachments/assets/7e378b4b-4c09-4f14-9066-0e07da894382" />
