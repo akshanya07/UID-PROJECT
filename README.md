@@ -55,6 +55,17 @@ This system helps users:
 | Yaksh | Login Page, About Page |
 
 ---
+#Website:
+<img width="1365" height="641" alt="image" src="https://github.com/user-attachments/assets/04fe5614-b775-4604-ba30-9ce4a793e6d1" />
+<img width="1361" height="618" alt="image" src="https://github.com/user-attachments/assets/e1dff172-ba2a-47c3-9dbc-06221cf706a5" />
+<img width="1362" height="637" alt="image" src="https://github.com/user-attachments/assets/f129e8a2-2337-4c9a-8e09-fe58250f1f93" />
+<img width="1359" height="648" alt="image" src="https://github.com/user-attachments/assets/56369986-3931-4e3e-8123-d8f30629ec7c" />
+<img width="1360" height="635" alt="image" src="https://github.com/user-attachments/assets/7e378b4b-4c09-4f14-9066-0e07da894382" />
+<img width="1363" height="641" alt="image" src="https://github.com/user-attachments/assets/313955ea-1658-4dd8-be7e-0ffad422a5fb" />
+<img width="1365" height="619" alt="image" src="https://github.com/user-attachments/assets/88a2f9e2-793f-431f-945d-c59464117d34" />
+<img width="1365" height="645" alt="image" src="https://github.com/user-attachments/assets/92cb1e03-0e8f-4833-8b39-3a82f5fa977b" />
+<img width="1364" height="637" alt="image" src="https://github.com/user-attachments/assets/fd5e2bf1-90a4-4345-bee9-d4dbd2cb1042" />
+
 
 # Project Objective
 The objective of this project is to create a user-friendly platform that improves coordination and management among people living together in PGs or shared accommodations.
